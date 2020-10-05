@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -14,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         HttpBike.shared.request(url: "https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json/preview", method: .get, parameters: nil, type: [Ubike].self, success: { (result) in
             if result is [Ubike] {
@@ -47,9 +49,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let dvc = segue.destination as? DetailViewController {
-                let selectedIndexPath = tableview.indexPathForSelectedRow
-                if let selectedRow = selectedIndexPath?.row {
-                    dvc.data = ubike?[selectedRow]
+                if let selectedRow = tableview.indexPathForSelectedRow {
+                    dvc.data = ubike?[selectedRow.row]
                 }
             }
         }

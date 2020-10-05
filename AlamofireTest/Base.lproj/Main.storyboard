@@ -39,7 +39,7 @@
                                                         <constraint firstAttribute="width" constant="203" id="5j8-3O-4AU"/>
                                                         <constraint firstAttribute="height" constant="42" id="KJF-1T-6gM"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -49,7 +49,7 @@
                                                         <constraint firstAttribute="width" constant="203" id="uoF-HW-Gz8"/>
                                                         <constraint firstAttribute="height" constant="40" id="zUv-Mr-4p1"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

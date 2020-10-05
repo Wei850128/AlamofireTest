@@ -9,9 +9,13 @@
 import Foundation
 import Alamofire
 
+
+
 class HttpBike {
     static let shared = HttpBike()
     fileprivate var session = Session()
+    
+    
 
     func request<T>(url: String, method: HTTPMethod, parameters: Parameters?, type: T.Type, success: ((Decodable) -> Void)?, failure:(() -> Void)?) where T: Decodable {
         session.request(url, method: method, parameters: parameters, encoding: URLEncoding.queryString, headers: nil).response { (response) in
