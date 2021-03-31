@@ -13,7 +13,7 @@ import Alamofire
 
 class HttpBike {
     static let shared = HttpBike()
-    fileprivate var session = Session()
+    fileprivate var session = Session ()
     
     
 
