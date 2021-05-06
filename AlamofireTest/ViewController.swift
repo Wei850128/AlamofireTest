@@ -51,7 +51,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             if let dvc = segue.destination as? DetailViewController {
                 if let selectedRow = tableview.indexPathForSelectedRow {
                     dvc.data = ubike?[selectedRow.row]
-                }
             }
         }
     }

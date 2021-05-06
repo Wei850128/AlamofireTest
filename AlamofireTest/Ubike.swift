@@ -12,3 +12,5 @@ struct Ubike:Codable {
     let sna: String?
     let ar: String?
 }
+
+
